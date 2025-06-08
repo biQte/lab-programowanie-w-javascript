@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .slider {
-            width: 100%;
-            height: 200px;
-            border: 1px solid black;
-        }
-        #slider-inner {
-            width: 100px;
-            height: 100px;
-            background: lightblue;
-        }
-    </style>
+    <title>Slider Kenbansiechowa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="slider">
-        <div id="slider-inner">
-        <!-- <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt=""> -->
+    <div class="slider">
+        <div class="slides" id="slides">
+        <div class="slide active">
+            <img src="https://picsum.photos/id/1015/800/400" class="kenburns" alt="" />
         </div>
-    </section>
+        <div class="slide">
+            <video src="https://www.w3schools.com/html/mov_bbb.mp4" muted autoplay loop></video>
+        </div>
+        <div class="slide">
+            <div style="text-align:center">
+            <h2>To może być cokolwiek</h2>
+            <p>HTML, tekst, video, grafika</p>
+            </div>
+        </div>
+        </div>
+        <div class="nav-buttons">
+        <button id="prev"><</button>
+        <button id="next">></button>
+        </div>
+        <div class="dots" id="dots"></div>
+        <button class="pause-btn" id="pauseBtn">Pauza</button>
+    </div>
+
+    <div class="interval-input-wrapper">
+        <label for="interval">Czas trwania slajdu (sekundy):</label>
+        <input type="number" min="1" value="5" id="intervalinput" />
+    </div>
+
+    <div id="lightbox" class="lightbox" style="display: none;"></div>
+
     <script src="main.js"></script>
 </body>
 </html>
