@@ -6,6 +6,16 @@
     <title>Drumkit</title>
 </head>
 <body>
+    <p>Naciśnij A / S / D, aby zagrać dźwięk.</p>
+    <div>
+        <button onclick="addChannel()">Dodaj kanał</button>
+        <label>
+            Metronom (BPM): <input type="number" id="bpm" value="120" min="30" max="300">
+            <input type="checkbox" id="metronomeToggle"> Włącz metronom aby słyszeć rytm
+        </label>
+    </div>
+    <div id="channels"></div>
+
     <audio src="./sounds/clap.wav" controls data-key="a" data-volume="40" id="s1"></audio>
     <audio src="./sounds/kick.wav" controls data-key="s" id="s2"></audio>
     <audio src="./sounds/hihat.wav" controls data-key="d" id="s3"></audio>
