@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notekeep ork</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="header">
+    <h1>NotePocket</h1>
+    <button onclick="showForm()">Nowa notatka</button>
+  </div>
+  <div class="search">
+    <input id="searchInput" oninput="renderNotes()" placeholder="Szukaj... (tytuł, treść, tagi)" />
+  </div>
+  <div id="form-container"></div>
+  <div id="notes-list"></div>
+  <div class="done-list">
+    <h2>Wykonane notatki</h2>
+    <div id="done-notes-list"></div>
+  </div>
     <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+body { 
+    font-family: sans-serif; 
+    margin: 0; 
+    padding: 20px; 
+    background: #f4f4f4;
+}
+.header { 
+    display: 
+    flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.note-form, .note-card { 
+    background: white; 
+    padding: 1em; 
+    border-radius: 8px; 
+    margin-top: 1em; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+.note-card { 
+    border-left: 8px solid #ccc; 
+    position: relative; 
+}
+.note-card.pinned { 
+    border-left-color: gold; 
+}
+.tag { 
+    display: inline-block; 
+    background: #eee; 
+    padding: 0.2em 0.6em; 
+    border-radius: 4px; 
+    margin: 2px; 
+    font-size: 0.8em; 
+}
+.note-todo li { 
+    cursor: pointer; 
+}
+.done { 
+    text-decoration: line-through; 
+    color: gray; 
+}
+input, textarea, button, select { 
+    margin-top: 0.5em; 
+    display: block; 
+    width: 100%; 
+    padding: 0.5em; 
+    border-radius: 4px; 
+    border: 1px solid #ccc; 
+}
+button { 
+    width: auto; 
+    cursor: pointer; 
+    background: #007bff; 
+    color: white; 
+    border: none; 
+}
+button.danger { 
+    background: #dc3545; 
+}
+.search { 
+    margin-top: 1em; 
+}
+.done-list { 
+    margin-top: 2em; 
+    background: #e0ffe0; 
+    padding: 1em; 
+    border-radius: 8px; 
+}
